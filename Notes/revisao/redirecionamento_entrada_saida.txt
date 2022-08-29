@@ -1,0 +1,60 @@
+REDIRECIONAMENTO DE SAIDA DE ERRO
+
+cat alunos.txt
+	retorna o conteudo no terminal
+
+cat alunos.txt > alunos-temp.txt 
+	cria o arquivo alunos-temp.txt e redireciona o conteudo 
+	de alunos.txt para dentro do arquivo alunos-temp.txt
+	Se o arquivo alunos-temp.txt ja existir, ele apaga o que 
+	ja estava la
+
+cat alunos.txt >> alunos-temp.txt
+	Concatena a saida de alunos.txt ao final do arquivo
+	alunos-temp.txt sem apagar o que ja estava antes
+
+cat alunos.txt >> log.out 2>&1
+	Concatena, tanto a saida quanto a saida de erro para o arquivo log.out
+
+cat alunos.txt >> log.out 2>> log_erro.out
+	Concatena a saida par o log.out e a saida de erro para o log_erro.out
+
+
+
+
+
+
+
+
+
+
+
+REDIRECIONAMENTO DE SAIDA DE ERRO
+
+ls -l alunos.txt 2> log.out
+	redireciona o erro no arquivo log.out
+
+ls -l alunos.txt 2>>  log.out
+	concatena o erro no arquivo log.out
+
+ls -l alunos.txt 2> /dev/null
+	redireciona o erro para lugar nenhum
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REDIRECIONAMENTO DE ENTRADA
+Utilizamos o |
+
+cat alunos.txt | tr a A
+

@@ -1,0 +1,182 @@
+#COMANDO cat - retorna o conteudo de um arquivo
+
+cat alunos.txt
+	retorna no terminal o conteudo do arquivo
+
+
+cat -b alunos.txt
+	retona o conteudo do arquivo enumerando as linhas que nao
+	estao em branco
+
+cat -n alunos.txt
+	retorna o conteudo do arquivo enumerando todas as linhas, 
+	ate as que estao em branco
+
+cat -A alunos.txt
+	retorna o conteudo do arquivo com caracteres especiais
+	(espa√os,tabs,etc...) 
+
+
+
+#COMANDO tac - retorna o conteudo de um arquivo de baixo pra cima
+
+tac alunos.txt
+	retorna o conteudo de um arquivo no terminal de baixo pra cima
+
+
+
+#COMANDO tail - retorna as ultimas 10 linhas de um arquivo
+
+tail alunos.txt
+	retorna as ultimas 10 linhas de um arquivo
+
+
+tail -n15 alunos.txt (omitindo o 'n' tambem funcion)
+	retorna as ultimas 15 linhas de um arquivo
+
+
+
+#COMANDO head - retorna as primeiras 10 linhas de um arquivo
+
+
+head alunos.txt
+	retorna as primeiras 10 linhas de um arquivo
+
+head -n5 alunos.txt
+	retorna as primeiras 5 linhas do arquivo
+
+head -c10 alunos.txt
+	retorna os primeiros 10 caracteres do arquivo
+
+
+
+
+
+#COMANDO wc - conta os caracteres,palavras,linhas e bytes de um arquivo
+
+wc alunos.txt
+	retorna(exemplo):  "10 20 30 alunos.txt"
+	ou seja, 10 linhas, 20 palavras e 30caracteres
+
+wc -l alunos.txt
+	retorna somente o numero de linhas
+
+wc -w alunos.txt
+	retorna somente o numero de palavras
+
+wc -m alunos.txt
+	retorna somente o numero de caracteres
+
+wc -c alunos.txt
+	retorna somente o numero de bytes
+
+
+
+
+#COMANDO sort - ordena um arquivo
+
+sort alunos.txt
+	ordena o arquivo alfabeticamente
+
+sort -r alunos.txt
+	ordena o arquivo alfabeticamente ao contrario
+
+sort -k2 alunos.txt
+	ordena o arquivo alfabeticamente pelo segundo campo
+	(exemplo sobrenome)
+
+sort -k2 -t":" alunos.txt
+	ordena o arquivo alfabeticamente pelo segundo campo,
+	utilizando o separador ":"
+
+sort -g alunos.txt
+	ordena o arquivo numericamente
+
+
+
+
+
+#COMANDO uniq - retorna o conteudo nao repetido de um arquivo,
+		 se o conteudo repetido estiver em linhas adjacentes
+
+uniq alunos.txt
+	as linhas repetidas sao retornadas uma unica vez
+	(linhas repetidas nao adjacentes sao retornadas repetidas)
+
+sort alunos.txt |uniq
+	ordena as linhas alfabeticamente e retorna o conteudo nao repetido
+
+uniq -u alunos.txt
+	retorna so as linhas que apareceram uma unica vez
+
+uniq -d alunos.txt	
+	retorna as linhas que apareceram repetidas
+
+uniq -c alunos.txt
+	retorna as linhas repetidas com as respectivas repeticoes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

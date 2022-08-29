@@ -1,0 +1,128 @@
+#COMANDO CD - change directory
+cd-
+	volta para o diretorio anterior
+cd
+	retorna para o home do diretorio
+cd ~
+	retorna para o home do usuario
+pwd
+	mostra o diretorio atual
+
+
+#COMANDO ls - list
+
+ls
+	lista o arquivos e diretorios
+
+ls -ltr
+	ordena por data
+
+ls -l
+	mostra os detalhes dos arquivos
+
+ls -1
+	mostra os arquivos/diretorios  na vertical
+
+
+
+#COMANDO ps - mostra os processos da maquina
+
+ps
+	mostra os processos
+
+ps axu
+	mostra os processos basicos
+	mostra nome/pid/consumo de CPU/inicio da execucao/tempo do execucao/nome do processo
+
+ps axu|more
+	mostra os processos com mais detalhes
+
+
+#COMANDO touch - criar arquivo em branco ou atualizar horario de modificacao
+
+touch  arquivo-teste
+	cria o arquivo-teste.txt em branco
+	ou atualiza a hora do arquivo-teste.txt
+
+
+
+
+
+#COMANDO echo - mostra na tela um parametro dado
+
+echo linux
+	printa a palavra 'linux'
+
+echo linux shell
+	printa a frase 'linux shell'
+
+echo -n linux shell script
+	printa a frase 'linux shell' sem quebra de linha
+
+echo -e
+	aceita caracteres regex
+
+
+
+
+
+#COMANDO mkdir - cria diretorio
+
+mkdir diretorio1
+	cria o diretorio1
+
+mkdir diretorio1/exercicio1
+	cria o exercicio1 dentro de diretorio1
+	se o diretorio1 n√o existir, ocorre um erro
+mkdir -p diretorio1/exercicio1
+	cria o diretorio1 e depois cria o exercicio1
+
+
+
+#COMANDO rm - remove arquivos
+
+rm arquivo
+	apaga o arquivo
+	nao remove diretorio
+
+rm -r diretorio
+	apaga o diretorio e tudo dentro dele
+
+rmdir diretorio
+	so remove se o diretorio estiver vazio
+
+rm arquivo-inexistente
+	da erro se o arquivo nao existe
+
+rm -f arquivo-inexistente	
+	se existir ele  apaga, se nao existir nao retorna erro
+
+
+
+
+#COMANDO sleep
+
+sleep 10
+	deixa esperando 10 segundos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

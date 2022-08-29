@@ -1,0 +1,178 @@
+#COMANDO find - procura arquivo/diretorio
+
+find /"onde eu vou procurar" "argumento"
+Exemplo: find /home
+	 find /
+	 find .
+
+
+find ./ -name  alunos.txt
+	retorna o caminho dos arquivos pelo nome
+
+find ./ -user joao -name alunos.txt
+	retorna o caminho pelo nome e usuario
+
+find ./ -name alunos.txt -exec ls -l {}
+	executa o comando "ls -l" em cada arquivo
+
+
+
+
+
+
+COMANDO date - retorna data
+
+date +%H
+	retorna somente a hora
+
+date +%M
+	retorna o minuto
+
+date +%D
+	retorna a data
+
+date +%d
+	retorna o dia
+
+date +%m
+	retorna o mes
+
+date +%d/%m
+	retorna o dia e mes
+
+
+
+
+
+
+
+
+
+
+
+#COMANDO seq - executa uma sequencia
+
+seq 10
+	retorna uma sequencia de 1 a 10
+
+seq 0 10
+	retorna uma sequencia de 0 a 10
+
+seq 5 2 30
+	retorna uma sequencia de 5 a 30 indo de 2 em 2
+
+
+
+
+
+
+#COMANDO expr - usado para fazer contas
+
+expr 2 + 2
+	retorna 4
+
+expr 5 / 2
+	retorna 2
+
+expr 5 * 2
+	da erro, pois * é um caractere protegido do shell
+
+expr 5 /* 2
+	retorna 10
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	

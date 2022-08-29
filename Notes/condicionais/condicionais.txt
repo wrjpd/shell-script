@@ -1,0 +1,145 @@
+#CONDICIONAL if
+Exemplos de sintaxe
+
+1-
+if <comando-condição>
+then
+	comando1
+	comando2
+	comando3
+fi
+
+
+
+2-
+if<comando-condição>
+then
+	comando1
+else
+	comando2
+fi
+
+
+
+3-
+if<comando-condição>
+then
+	comando1
+elif<comando-condição>
+	comando2
+else	
+	comando3
+fi
+
+
+
+
+#COMANDOS AUXILIARES
+-teste,negação,and, or
+
+
+#COMANDO test ou [] - retorna um exit code
+
+comando test: Utiizado para criar uma condição
+
+test<expressão>
+[<expressão>]
+
+Testando valores numéricos
+OPÇÃO	DECRIÇÃO
+-eq	equal
+-ne	not equal
+-gt	greater than
+-ge	greater equal
+-lt	lower than
+-le	lower equal
+
+Testando Strings
+OPÇÃO	DESCRIÇÃO
+=	Uma string igual a outra
+!=	Uma string diferente da outra
+-n	String não nula
+-z  	String nula	
+
+Testando Arquivos
+OPÇÃO	DESCRIÇÃO
+-f	É um arquivo
+-d	É um diretório
+-r	Tem permissão de leitura
+-w	Tem permissão de escrita
+-x	Tem permissão de execução
+-s	Possui tamanho maior que zero
+
+
+
+Exemplo de uso:
+
+VAR1=12
+
+if test "$VAR1"-gt 10
+then
+	echo sucesso
+fi
+
+OOOOU
+
+if ["$VAR1" -gt 10]
+then
+	echo sucesso
+fi
+
+
+
+
+
+
+
+#NEGAÇÃO !
+
+Exemplo de uso:
+
+VAR1=12
+
+if [!"$VAR1" -gt 10]
+then
+	echo sucesso
+fi
+
+
+
+
+
+
+
+#AND -a
+
+Exemplo de uso:
+
+VAR1=12
+if["$VAR1" -gt 10 -a "$VAR1" -lt 20]
+then
+	echo sucesso
+fi
+
+
+
+
+
+
+
+#OR -o
+
+Exemplo de uso:
+
+VAR1=12
+if["VAR1" -gt 10 -o "VAR1" -eq 5]
+then
+	echo sucesso
+fi
+
+
+
+
+
+
+

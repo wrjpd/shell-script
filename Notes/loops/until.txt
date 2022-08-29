@@ -1,0 +1,52 @@
+UNTIL - contrário de WHILE
+	- até que a condição seja verdadeira, ele irá executar
+
+
+ESTRUTURA
+
+until <comando-condição>
+do
+	comando1
+	comando2
+done
+
+
+
+
+EXEMPLOS DE USO:
+
+
+1-
+
+x=1
+until [ $x -eq 20 ]
+do
+	echo "O valor atual é $x"
+	x=$(expr $x + 1) 
+done
+
+
+
+2-
+
+until [ $(ps axu | wc -l ) -ge 300 ]
+do
+	echo "Tudo ok"
+	sleep 30
+done
+
+
+
+3-
+
+until ls /var/lock/process.lock > /dev/null
+do
+	echo " Aguardando Proesso..."
+	sleep 30
+done
+
+
+
+
+
+

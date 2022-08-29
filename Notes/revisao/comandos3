@@ -1,0 +1,98 @@
+#COMANDO tr - troca ou deleta caracteres
+
+cat alunos.txt |tr a e
+	retorna o arquivo e substitui 'a' por 'e'
+
+cat alunos.txt |tr a-z A-Z
+	retorna o arquivo em caixa alta
+
+cat alunos.txt |tr aei AEI
+	retorna o arquivo trocando aei por AEI
+
+cat alunos.txt| tr ' ' '\t'
+	retorna o arquivo trocando espa√o por tab
+
+cat alunos.txt |tr -d aei
+	retorna o arquivo deletado as letras a,e,i
+
+echo Curso Shell Script | tr l L
+	retorna a string trocando l por L
+
+echo Curso Shellllllllllll Script | tr -s 'l'
+	retorna "Curso Shel Script"
+
+echo Curso Shell Script | tr [:lower:] [:upper:]
+	retorna "CURSO SHELL SCRIPT"
+
+
+
+
+
+
+#COMANDO cut - recorta pedacos de uma string
+
+cat alunos.txt	| cut -c1-5
+	retorna cada linha mostrando os caracteres de 1 a 5
+
+cat alunos.txt | cut -c1,2,5
+	retorna cada linha mostrando os caracteres 1,2 e 5
+
+cat alunos.txt | cut -c5-
+	retorna cada linha mostrando do caractere 5 pra frente
+
+cat alunos.txt | cut-c-5
+	retorna cada linha mostrando ate o caractere 5
+
+cat alunos.txt | cut -c1,2,10-
+	retorna cada linha mostrando o caractere 1,2 e do 10 para frente
+
+cat alunos.txt | cut -d" "  -f1 (f1 de field 1 e -d especifica o separador de campos)
+	retorna cada linha mostrando somente o primeiro campo separado por espaco
+
+
+
+
+
+
+
+
+#COMANDO diff - retorna a diferenca entre dois arquivos ou diretorios
+
+diff alunos.txt alunos2.txt
+	retorna as diferencas entre esses arquivos
+
+diff -w alunos.txt alunos.txt2
+	ignora os espacos em branco
+	
+diff -r diretorio1 diretorio2
+	retorna as difencas dos diretorios e arquivos dentro do diretorio
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

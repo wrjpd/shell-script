@@ -1,0 +1,57 @@
+Todo codigo/programa retorna um codigo de saida entre 0 e 255
+0 - sucesso
+1 a 255 - erro; o valor de erro depende do codigo/programa
+
+
+
+#COMANDO echo $? - retorna o codigo do comando anterior
+
+touch teste 
+echo $?
+	retorna '0', ou seja, sucesso
+
+
+
+
+
+
+
+
+
+#COMANDO man 'comando' -  ver o codigo de retorno de cada comando 
+
+man ls - retorna os codigos de retorno(exit status) do comando ls
+
+
+
+
+
+
+
+
+
+#COMANDO echo $? ap√s rodar um script
+
+o echo $? retornara o codigo de saida da ultima linha, independente se alguma linha acima deu erro
+
+
+
+
+
+
+#COMANDO 'exit' dentro do script -  interrompe o script naquela linha e retorna o codigo de saida do comando anterior
+
+SCRIPT:
+
+ls /tmp/teste
+exit
+echo "OI"
+
+RETORNO AO APLICAR echo $? : codigo de erro
+
+
+
+
+#COMANDO exit 10 -  se houver erro na ultima linha executada, echo $? retornara 10
+
+

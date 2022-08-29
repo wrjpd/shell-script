@@ -1,0 +1,220 @@
+FILE GLOBBING x REGEX (expressoes regulares)
+Usam os mesmos caracteres
+FILE GLOBBING é usado para selecao de arquivos , enquanto o REGEX é usado para selecao de texto
+
+
+
+FILE GLOBBING
+
+
+ls -l Aula*
+	retorna todos os arquivos que comecam com a palavra Aula
+
+ls -l Aula[12345]
+ls -l Aula[1-5]
+	retorna os arquivos com os caracteres de interesse dentro de []
+
+ls -l *[12]
+	retorna qualquer coisa que termina com 1 ou 2
+
+ls -l *{Aula,AULA}11
+	procura Aula11 e AULA11
+
+ls -l Aula1?
+	procura Aula1 exigindo que tenha 1 caractere depois,ou seja,
+	nao retorna o Aula1
+
+ls -l Aula?
+	procura Aula exigindo que tenha 1 caractere depois de Aula
+
+ls -l Aula??
+	procura Aula exigindo que tenha 2 caracteres depois de Aula
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REGEX
+
+egrep "[Ll]inux" texto.txt
+	retorna as linha que possuem linux ou Linux
+
+egrep "b[aeig]g" texto.txt
+	retorna as linhas que possuem as palavras "bag","beg" ou "big"
+
+egrep "^Linux" texto.txt
+	retorna as linhas que comecem com "Linux"
+
+egrep "Linux$" texto.txt
+	retorna as linhas que terminam com "Linux"
+
+egrep -v "^$" texto.txt
+	retona as linhas omitindo as linhas em branco(-v omiti)
+
+
+egrep "b[a-i]g" texto.txt
+	retorna as linhas que possuem as palavras "ba","be" ou "bi"
+	podendo ou nao existir o "g"
+
+egrep "b[a-i]g+" texto.txt
+	retorna as linhas que possuem as palavras "ba", "be" ou "bi"
+	com o "g" aparecendo uma ou mais vezes
+
+egrep "b[a-i]g?" texto.txt
+	retorna as linhas que possuem as palavras "ba", "be" ou "bi"
+	com g aparecendo nenhum ou apenas uma vez
+
+egrep "O.Linux" texto.txt
+	retorna as linhas com O e um caractere entre O e Linux
+
+egrep "O.*Linux" texto.txt
+	retorna as linhas podendo existir qualquer coisa entre O e 
+	Linux
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

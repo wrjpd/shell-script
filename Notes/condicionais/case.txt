@@ -1,0 +1,54 @@
+#CONDICIONAL case
+Exemplos de sintaxe
+
+case $valor in
+	padrão1)
+		comandos
+		;;
+	padrão2)
+		comandos
+		;;
+	*)
+		comandos
+		;;
+esac
+
+
+
+
+
+Exemplo de uso
+
+#OPÇÕES
+
+case $opção in
+	opção1)
+		echo "Opção 1"
+		;;
+	opção2)
+		echo "Opção 2"
+		;;
+	*)
+		echo "default"
+		;;
+esac
+
+
+
+
+
+
+
+#NÚMEROS E STRINGS
+
+case $caracter in
+	[0-9])
+		echo "O caractere informado é um número"
+		;;
+	[A-Z])
+		echo "O caractere informado é uma letra maíscula"
+		;;
+	[a-z])
+		echo "O caracatere informado é uma letra minúscula"
+		;;
+esac

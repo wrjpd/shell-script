@@ -1,0 +1,120 @@
+#COMANDO grep - procura um conteudo dentro de uma saida de texto
+
+grep Claudia alunos.txt
+	retorna as linhas que possuem a string "Claudia"
+
+grep Claudia alunos*
+	retorna as linhas que possuem a string "Claudia" em todos os arquivos
+
+grep -i CLAUDIA alunos.txt
+	-i desabilita a opcao case sensitive,ou seja ,
+	retorna independente da caixa alta
+
+grep -c Ana alunos.txt
+	retorna quantas vezes "Ana" foi achado
+
+grep -v Ana alunos.txt
+	retorna as linhas excluindo aquelas que possuem a string "Ana"
+
+grep -r Ana  *
+	procura a palavra Ana em todos os diretorios/subdiretorios
+
+grep -l Ana
+	retorna os arquivos que possuem a string Ana, nao retorna a linha
+
+grep -A3 Carlos alunos.txt (A de 'after')
+	retorna 3 linhas depois da string "Carlos"
+
+grep -B3 Carlos alunos.txt (B de 'before')
+	retorna 3 linhas anteriores da string "Carlos"
+
+
+
+grep aceita expressoes regulares simples
+egrep aceita expressoes regulares extendidas
+fgrep nao aceita expressoes regulares
+
+
+
+
+
+
+
+
+#COMANDO sed - filtra e transforma o conteudo
+
+sed '1,3 d' alunos.txt	(d de delete)
+	deleta da linha 1 ate a linha 3
+
+sed '/Rafael/d' alunos.txt
+	deleta a linha que contem a string "Rafael"
+
+sed 's/Paulo/Joao/' alunos.txt (s de substitutir)
+	substitui Paulo por Joao somente na primeira ocorrencia
+
+sed 's/Paulo/Joao/g' alunos.txt
+	substitui Paulo por Joao em todas as ocorrencias
+
+sed 's/ //g' alunos.txt
+	substitui todos os espacos em branco por nada
+
+
+
+
+
+
+
+
+
+
+#COMANDO more
+
+more alunos.txt
+	mostra o conteudo em paginas
+
+
+
+
+
+
+
+#COMANDO less - tem mais opcoes que o more
+
+less alunos.txt
+	mostra o conteudo em paginas
+	podemos pesquisar strings com '/'
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,50 @@
+VARIAVEIS SHELL SCRIPT
+
+env 
+	retorna as variaveis do ambiente shell
+
+echo $HOME
+	retorna a variavel HOME
+
+
+
+
+DECLARAR VARIAVEL
+	
+VARIAVEL1=Valor ("=" tem que ser junto)
+echo $VARIAVEL1
+	retorna o valor atribuido à VARIAVEL1
+
+
+echo $$
+	retorna o pid da secao atual
+
+
+
+DECLARAR UMA VARIAVEL COMO O RESULTADO DE UM COMANDO
+
+VARIAVEL="date +%H"
+echo $VARIAVEL
+	retorna date +%H"
+
+VARIAVEL=`date +%H`
+	retorna a hora atual
+
+VARIAVEL=$(date +%H)
+	retorna a hora atual
+
+
+
+
+
+EXPORTAR VARIAVEIS
+as variaveis criadas sao locais, se abrirmos novamente o bash ela nao
+estara la
+
+TESTE=Curso
+export TESTE
+	essa variavel sera visivel para os processos filhos
+	do processo atual
+
+
+

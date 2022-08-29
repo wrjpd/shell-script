@@ -1,0 +1,45 @@
+ESTRUTURA DO WHILE
+
+while <comando-condição>
+do
+	comando1
+	comando2
+	...
+done
+
+
+
+
+Exemplo de uso
+
+
+1-
+
+x=1
+while [$x -le 20]
+do
+	echo "O valor atual é $x"
+	x=$(expr $x + 1)
+done
+
+
+
+
+2-
+
+while [ $(ps axu | wc -l) -lt 300]
+do
+	echo "Processo em Execução"
+	sleep 30
+done
+
+
+
+
+3-
+
+while ls /var/lock/processo.lock > /dev/null
+do
+	echo "Processo em execução"
+	sleep 30
+done

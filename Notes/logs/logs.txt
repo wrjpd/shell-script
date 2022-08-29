@@ -1,0 +1,8 @@
+#COMANDO TEE - redireciona a saida para um arquivo e joga na tela
+
+./PrimeiroScript.sh | tee -a log.out
+	parametro -a = append
+	Retorna na tela a saida do arquivo ./PrimeiroScript e concantena
+	no arquivo log.out
+
+

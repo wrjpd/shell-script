@@ -1,0 +1,37 @@
+
+
+IFS (Internal Field Separator) = ' ',/t/n
+
+AO executarmos:
+for var in $(cat alunos2.txt)
+do
+	echo "Exibindo valor: $var"
+done 
+
+
+
+ Não é retornado cada linha do arquivo alunos2.txt, e sim cada cmapo separado por ' ',/t ou /n.
+
+
+
+JEITO DE PEGAR LINHA DO ARQUIVO:
+Reatribuir o IFS
+
+criar um backup: OLDIFS=$IFS
+reatribuir o valor: IFS=:
+
+Agora o comando
+for var in $(cat alunos2.txt)
+do
+	echo "$var"
+done
+
+RETORNA CADA LINHA
+
+
+
+
+
+PRECISAMOS RETORNAR O IFS:
+IFS=$OLDIFS
+

@@ -1,0 +1,28 @@
+Execucao de comandos independentes : utilizamos o ;
+
+ls alunos.txt ; echo Linux
+	retorna "Linux" independente se o primeiro comando funcionar
+	ou nao
+
+
+Execucao de comandos se o primeiro comando foi executado com sucesso: utilizamos o &&
+
+ls alunos.txt && echo Linux
+	retorna "Linux" se o primeiro comando funcionar,
+	ou seja, se alunos.txt existir
+
+
+Execucao de comandos se o primeiro comando deu erro: utilizamos o ||
+
+ls alunos.txt || echo Linux
+	retorna "Linux" se o primeiro comando nao funcionar,
+	ou seja, se alunos.txt nao existir
+
+
+
+
+
+PARENTESES
+
+(cd .. ; ls -l)  - && tambem funcionar
+	"retorna" um diretorio e da ls -l sem sair do diretorio atual

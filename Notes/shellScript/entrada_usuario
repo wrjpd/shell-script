@@ -1,0 +1,32 @@
+$COMANDO read - retorna um input
+
+
+read NOME
+	ao digitarmos 'joao',
+	 a variavel "NOME" recebe 'joao
+
+echo $NOME
+	retorna 'joao
+
+read VAR1
+	ao digitarmos "CURSO SHELL SCRIPT",
+	VAR1 recebe "CURSO SHELL SCRIPT"
+
+read VAR1 VAR2
+	ao digitarmos "CURSO SHELL SCRIPT",
+	VAR1 recebe "CURSO" e VAR2 recebe "SHELL SCRIPT"
+
+red VAR1 VAR2 VAR3
+	ao digitarmos "CURSO SHELL SCRIPT"
+	VAR1 recebe "CURSO", VAR2 recebe "SHELL" e VAR3 recebe "SCRIPT"
+
+
+
+
+read -p "Informe o seu nome:" NOME
+	retorna o input "Informe o seu nome:"
+
+read -s CODIGO
+	retorna um input invisivel
+	o comando -s omiti o que escrevemos
+

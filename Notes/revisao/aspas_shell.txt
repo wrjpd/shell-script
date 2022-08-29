@@ -1,0 +1,21 @@
+USO DE ASPAS NO SHELL
+
+echo *
+	retorna todos os arquivos do diretorio atual
+
+echo "*"
+echo '*'
+echo \*
+	retorna *
+
+
+ls alunos*
+	retorna todos os arquivos/diretorios que comecam com alunos
+
+ls "alunos*"
+ls alunos\*
+	retorna alunos*
+
+
+as aspas duplas protegem todos os caracteres, exceto $ ` /
+as aspas simples protegem todos os caracteres, inclusive $ ` /
